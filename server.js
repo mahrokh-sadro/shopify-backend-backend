@@ -11,7 +11,7 @@ const corsOptionsDelegate = function (req, callback) {
   const allowlist = [
     `http://localhost:3000`,
     "http://127.0.0.1:3000",
-    "https://frontend-inventory.netlify.app/",
+    "https://frontend-inventory.netlify.app",
   ];
   let corsOptions;
   if (allowlist.indexOf(req.header("Origin")) !== -1) {
